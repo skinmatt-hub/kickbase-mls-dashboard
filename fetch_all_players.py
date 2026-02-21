@@ -3,7 +3,7 @@ Fetch ALL MLS players with market values using the lineup selection endpoint
 """
 import requests
 from auth_manager import KickbaseAuthManager
-from config import EMAIL, PASSWORD
+from config_deploy import EMAIL, PASSWORD
 
 def fetch_all_players(league_id):
     """
@@ -180,3 +180,4 @@ if __name__ == "__main__":
         print("\n" + "="*80)
         print("✅ Ready to integrate into dashboard!")
         print("="*80)
+
